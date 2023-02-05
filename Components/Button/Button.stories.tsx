@@ -6,8 +6,6 @@ export default {
   title: "Button",
   component: Button,
 } as ComponentMeta<typeof Button>;
-;
-
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
@@ -29,7 +27,7 @@ Secondary.args = {
 export const ChangeColor = () => {
   const [color, setColor] = React.useState("green");
   const clickHandler = () => {
-    setColor(prevColor => prevColor === "green" ? "yellow" : "green");
+    setColor((prevColor) => (prevColor === "green" ? "yellow" : "green"));
   };
 
   return (
