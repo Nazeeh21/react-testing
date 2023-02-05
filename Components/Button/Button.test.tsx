@@ -4,7 +4,7 @@ import Button from "./Button";
 it("renders correctly", () => {
   const tree = renderer
     .create(
-      <Button label="Test Button" hasError={false} bg="yellow" color="black" />
+      <Button label="Test Button" hasError={false} bg="blue" color="black" />
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
